@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
   def hello
     render text: "This site is under construction. Check back soon!"
   end
+
+  def testing
+  	render text: "Testing changing a method in a given route."
+  end
 end
