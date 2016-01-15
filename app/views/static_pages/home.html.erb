@@ -7,6 +7,14 @@
     a sample application operating under version control at <a href="https://github.com/sponee/how_many_effs">Github</a>.
   </h3>
   <p>
- 	This site is under contruction. Check back soon.
+  	<form action="<%= root_path %>" method="get">
+  		<%= label_tag :answer, "How many cares?" %>
+  		<%= text_field_tag :answer, params[:answer] %>
+  		<%= submit_tag "Do you care?", :name => nil %>
+  	</form>
+  </p>
+
+  <p>
+  	<%= @how_many_fucks %>
   </p>
 </div>
