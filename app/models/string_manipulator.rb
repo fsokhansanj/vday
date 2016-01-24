@@ -1,15 +1,15 @@
 class StringManipulator
 
-	attr_accessor :user_submitted_string, :array_of_words, :fucks_given
-
+	attr_accessor :user_submitted_string, :array_of_words
+	
 	def initialize(string)
 		@user_submitted_string = string
 		@fucks_given = 0
 		text_to_array
 		@array_of_answers = Array.new
 		@correct_answers = {
-			'baltimore' => 'good job! Second question. What is the second question?',
-			'valentines' => 'correct again! What is the third question?'
+			'baltimore' => 'Good job! Second question. On what holiday was our first date?',
+			'valentines' => 'Correct again, but that was easy.'
 		}
 	end
 
