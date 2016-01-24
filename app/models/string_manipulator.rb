@@ -6,8 +6,11 @@ class StringManipulator
 		@user_submitted_string = string
 		@fucks_given = 0
 		text_to_array
-		@counts = Array.new
-		@key_words = ["job", "girlfriend", "car", "loan"]
+		@array_of_answers = Array.new
+		@correct_answers = {
+			'baltimore' => 'good job! Second question. What is the second question?',
+			'valentines' => 'correct again! What is the third question?'
+		}
 	end
 
 	def text_to_array
@@ -16,13 +19,15 @@ class StringManipulator
 
 	def array_counter
 		self.array_of_words.each do |check|
-			if @key_words.include?(check)
-			@counts	<< check
+			if @correct_answers.has_key?(check)
+				@answer = @correct_answers[check]
+			else
+				@answer = "Incorrect. Re-enter your last correct answer or click home to start over."
 		end
 	end
 end
 
-	def calculate_fucks
-		return @counts.count
+	def show_answer
+		return @answer
 	end
 end
