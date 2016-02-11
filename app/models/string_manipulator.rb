@@ -8,7 +8,7 @@ class StringManipulator
 		text_to_array
 		@array_of_answers = Array.new
 		@correct_answers = {
-			'Hinge' => 'Getting closer to the anecdote. Let's see how well you know me. What is my biggest fear',
+			'Hinge' => 'Getting closer to the anecdote.',
 			'Heights' => 'Correct again, but that was easy.'
 		}
 	end
