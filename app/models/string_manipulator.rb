@@ -8,8 +8,8 @@ class StringManipulator
 		text_to_array
 		@array_of_answers = Array.new
 		@correct_answers = {
-			'baltimore' => 'Good job! Second question. On what holiday was our first date?',
-			'valentines' => 'Correct again, but that was easy.'
+			'Hinge' => 'Getting closer to the anecdote. Let's see how well you know me. What is my biggest fear',
+			'Heights' => 'Correct again, but that was easy.'
 		}
 	end
 
