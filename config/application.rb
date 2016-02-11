@@ -1,7 +1,3 @@
-config.action_dispatch.default_headers = {
-    'X-Frame-Options' => 'ALLOWALL'
-}
-
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
