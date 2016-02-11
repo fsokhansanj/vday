@@ -5,14 +5,6 @@ class StaticPagesController < ApplicationController
     	@string.array_counter
     	@response = @string.show_answer
     else
-      @response = "Name the dating app we used to meet each other"
-  def home
-  	if params[:answer]
-    	@string = StringManipulator.new(params[:answer])
-    	@string.array_counter
-    	@response = @string.show_answer
-    else
-      @response = "What is my greatest fear?"
   end
 end
 
